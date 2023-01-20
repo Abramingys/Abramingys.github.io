@@ -1,0 +1,86 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: var(--black);
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  /* color: var(--white); */
+}
+
+button {
+  cursor: pointer;
+}
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1170px;
+  width: 100%;
+}
+.open {
+  display: block;
+}
+.totop {
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background: var(--btnblue);
+  border: none;
+}
+
+.totop::before {
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  content: '';
+  transform: rotate(90deg);
+}
